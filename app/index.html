@@ -27,7 +27,7 @@
                 <div id="error-fname">First Name can't be empty<span id="error-icon"><img src="../resources/images/icon-error.svg" alt=""></span></div>
                 <input type="text" id="lname" oninput="validateInput('lname')" placeholder="Last Name">
                 <div id="error-lname">Last Name can't be empty<span id="error-icon"><img src="../resources/images/icon-error.svg" alt=""></span></div>
-                <input type="text" id="email" oninput="validateInput('email')" placeholder="Email Address">
+                <input type="text" id="email" oninput="validateInput('email')" onchange="verifyEmail()" placeholder="Email Address">
                 <div id="error-email">Looks like this isn't an email<span id="error-icon"><img src="../resources/images/icon-error.svg" alt=""></span></div>
                 <input type="password" id="password" oninput="validateInput('password')" placeholder="Password">
                 <div id="error-password">Password can't be empty<span id="error-icon"><img src="../resources/images/icon-error.svg" alt=""></span></div>
