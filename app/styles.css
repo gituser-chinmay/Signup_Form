@@ -105,7 +105,8 @@ html, body {
 
 	width: 85%;
 	height: 55px;
-
+	background-color: white;
+	
 	border: 1px solid #d3d3d3;
 	border-radius: 6px;
 }
@@ -172,7 +173,7 @@ input[type=text], input[type=password] {
 	color: hsl(0, 100%, 74%);
 }
 
-#error-fname, #error-lname, #error-email, #error-pwd {
+#error-fname, #error-lname, #error-email, #error-password {
 	color: hsl(0, 100%, 74%);
 	font-family: poppins;
 	font-size: 13px;
