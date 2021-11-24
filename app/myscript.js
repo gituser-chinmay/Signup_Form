@@ -30,3 +30,14 @@ function submitForm() {
 		}
 	}
 }
+
+function verifyEmail() {
+	var validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;	
+	if (document.getElementById("email").value.match(validRegex)){
+		document.getElementById("error-email").style.display = "none";
+		document.getElementById("email").style.border = "1px solid #d3d3d3";
+	} else {
+		document.getElementById("error-email").style.display = "block";
+		document.getElementById("email").style.border = "1px solid hsl(0, 100%, 74%)";
+	}
+}
