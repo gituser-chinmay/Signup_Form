@@ -66,7 +66,7 @@ html, body {
 
 	box-shadow: 0px 9px 1px #6666665d;
 
-	padding: 10px 0px 40px 0px;
+	padding: 20px 0px 40px 0px;
 }
 
 #bolded {
@@ -105,13 +105,20 @@ html, body {
 
 	width: 85%;
 	height: 55px;
-
+	background-color: white;
+	
 	border: 1px solid #d3d3d3;
 	border-radius: 6px;
 }
 
+input[type=text], input[type=password] {
+	padding: 0px 0px 0px 10px;
+	font-family: poppins;
+	font-size: 15px;
+}
+
 .input-boxes input:focus {
-	border: 1px solid rgba(184, 184, 184, 0.603);
+	outline: 1px solid rgba(34, 34, 34, 0.603);
 }
 
 ::placeholder {
@@ -163,5 +170,28 @@ html, body {
 }
 
 #red {
-	color: hsl(0, 100%, 74%)	;
+	color: hsl(0, 100%, 74%);
+}
+
+#error-fname, #error-lname, #error-email, #error-password {
+	color: hsl(0, 100%, 74%);
+	font-family: poppins;
+	font-size: 13px;
+	font-style: italic;
+	text-align: right;
+
+	position: relative;
+
+	/* opacity: 0; */
+	/* top: 10px; */
+	right: 60px;
+
+	display: none;
+}
+
+#error-icon {
+	position: relative;
+	right: 40px;
+	/* top: 8px; */
+	bottom: 50px;
 }
