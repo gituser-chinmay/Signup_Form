@@ -24,12 +24,16 @@
         <div class="signup-form">
             <div class="input-boxes">
                 <input type="text" id="fname" placeholder="First Name">
+                <div id="error-fname">First Name can't be empty<span id="error-icon"><img src="../resources/images/icon-error.svg" alt=""></span></div>
                 <input type="text" id="lname" placeholder="Last Name">
+                <div id="error-lname">Last Name can't be empty<span id="error-icon"><img src="../resources/images/icon-error.svg" alt=""></span></div>
                 <input type="text" id="email" placeholder="Email Address">
+                <div id="error-email">Looks like this isn't an email<span id="error-icon"><img src="../resources/images/icon-error.svg" alt=""></span></div>
                 <input type="text" id="password" placeholder="Password">
+                <div id="error-pwd">Password can't be empty<span id="error-icon"><img src="../resources/images/icon-error.svg" alt=""></span></div>
             </div>
             <div class="submit-button">
-                <button id="submit">CLAIM YOUR FREE TRIAL</button>
+                <button id="submit" onclick="verifyCredentials()">CLAIM YOUR FREE TRIAL</button>
             </div>
             <div class="terms-and-conditions">
                 <p>By clicking the button you are agreeing to our <span id="red">Terms and Conditions</span></p>
